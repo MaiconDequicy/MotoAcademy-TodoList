@@ -32,7 +32,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
-        android:padding="20dp"
         app:layout_constraintTop_toBottomOf="@id/toolbarFeed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,6 +41,9 @@
             android:id="@+id/boasVindasCadastro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:layout_marginTop="20dp"
             android:text="Sexta-Feira, 04 Jul."
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -51,21 +53,23 @@
             android:id="@+id/recyclerTasks"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1"
+            android:layout_marginTop="15dp"
             android:paddingStart="16dp"
-            android:paddingEnd="16dp"/>
+            android:paddingEnd="16dp"
+            android:layout_weight="1" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabAddTarefa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="5dp"
-            android:backgroundTint="@color/cor01"
-            android:contentDescription="Adicionar tarefa" />
+
     </LinearLayout>
-
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddTarefa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Adicionar tarefa"
+        app:backgroundTint="@color/cor01"
+        app:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:src="@drawable/edit"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
