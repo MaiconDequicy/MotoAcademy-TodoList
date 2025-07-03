@@ -16,6 +16,17 @@ class Login : AppCompatActivity()
 
         setContentView(R.layout.activity_login)
 
+        val botaoFazerCadastro = findViewById<AppCompatButton>(R.id.botaoTelaCadastro)
+        val botaoFazerLogin = findViewById<AppCompatButton>(R.id.botaoLogin)
+
+        botaoFazerCadastro.setOnClickListener {
+            irTelaCadastro()
+        }
+
+        botaoFazerLogin.setOnClickListener {
+            irTelaPrincipal()
+        }
+
 
     }
 
@@ -23,6 +34,13 @@ class Login : AppCompatActivity()
     {
         val intent = Intent(this, Cadastro::class.java)
         startActivity(intent)
+    }
+
+    private fun irTelaPrincipal()
+    {
+        val intent = Intent(this, HomeTarefas::class.java)
+        startActivity(intent)
+
     }
 
 }

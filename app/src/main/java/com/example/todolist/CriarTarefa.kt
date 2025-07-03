@@ -6,10 +6,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Cadastro : AppCompatActivity() {
+class CriarTarefa : AppCompatActivity()
+{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cadastro)
+
+        setContentView(R.layout.activity_criar_tarefa)
 
     }
 }
